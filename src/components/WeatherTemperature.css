@@ -1,0 +1,13 @@
+.weather-icon {
+  margin-top: 2rem;
+  width: 50%;
+  height: auto;
+}
+
+.temp {
+  font-size: 7rem;
+  font-weight: 300;
+}
+
+.city {
+}
