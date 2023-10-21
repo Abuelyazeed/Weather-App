@@ -1,49 +1,19 @@
 .search-section {
   display: flex;
-  align-items: center;
-  gap: 0.8rem;
+  justify-content: center;
 }
 
 .search-input {
-  width: 15rem;
+  background-color: rgba(255, 255, 255, 0.168);
+  width: 90%;
   border: none;
   border-radius: 1.5rem;
   padding: 1rem;
   max-width: 100%;
 }
 
-.search-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5rem;
-  padding: 1rem;
-  background-color: white;
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  width: 3rem;
-  height: 3rem;
-}
-
-.search-icon {
-  font-size: 1.3rem;
-  color: #333;
-  display: flex;
-}
-
 /* Media query for desktop devices */
 @media (min-width: 768px) {
-  .search-input {
-    flex: initial;
-    width: 25rem;
-  }
-
-  .search-button {
-    width: 3rem;
-    height: 3rem;
-  }
-
   .search-icon {
     font-size: 1.3rem;
   }

@@ -1,35 +1,44 @@
 .weather-details {
   display: flex;
   justify-content: space-between;
-  margin-top: 3rem;
+  padding: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  /* border: 1px solid black; */
+  border-radius: 0.7rem;
 }
 
-.humidity-wind {
+.feels-humidity-wind {
   display: flex;
   align-items: flex-start;
-  gap: 0.6rem;
+  gap: 0.4rem;
 }
 
 .data {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 }
-
-.humidity-icon {
-  width: 30%;
-  height: auto;
-}
-.wind-icon {
-  width: 25%;
-  height: auto;
+.feels-like {
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin: 0;
 }
 
 .humidity-precentage {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.wind-speed {
+  font-weight: 700;
   font-size: 1.4rem;
   margin: 0;
 }
 
 .text {
   margin: 0;
+  font-weight: 500;
 }

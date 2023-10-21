@@ -11,22 +11,18 @@ function SearchCity({ searchCity }) {
   function searchHandler(event) {
     event.preventDefault();
     searchCity(enteredCity);
+    setEnteredCity("");
   }
   return (
-    <div className="container search-section">
+    <form className="search-section" onSubmit={searchHandler}>
       <input
         type="text"
-        placeholder="Search"
+        placeholder="Enter Location"
         className="search-input"
         onChange={changeHandler}
         value={enteredCity}
       ></input>
-      <button className="search-button" onClick={searchHandler}>
-        <span className="search-icon">
-          <MdSearch />
-        </span>
-      </button>
-    </div>
+    </form>
   );
 }
 

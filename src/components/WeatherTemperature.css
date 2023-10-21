@@ -1,13 +1,33 @@
-.weather-icon {
-  margin-top: 2rem;
-  width: 50%;
-  height: auto;
+.box {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.city-temp {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .temp {
-  font-size: 7rem;
-  font-weight: 300;
+  font-size: 5rem;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+.city {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0;
 }
 
-.city {
+.condition {
+  position: absolute;
+  transform: rotate(-90deg);
+  transform-origin: right bottom;
+  right: 0%;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-left: 0.5rem;
+  white-space: nowrap;
 }

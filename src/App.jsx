@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import { WiDaySunnyOvercast } from "react-icons/wi";
 import SearchCity from "./components/SearchCity";
 import WeatherTemperature from "./components/WeatherTemperature";
 import WeatherDetails from "./components/WeatherDetails";
@@ -33,15 +32,15 @@ function App() {
   }, [lat, long]);
 
   async function getLocation() {
-    // const url = "https://ipapi.co/json";
+    // const url = "http://ip-api.com/json";
     // const response = await fetch(url);
     // if (response.ok == false) {
     //   setApiOverload(true);
     // } else {
     //   const data = await response.json();
     //   setIpData(data);
-    //   setLat(data.latitude);
-    //   setLong(data.longitude);
+    //   setLat(data.lat);
+    //   setLong(data.lon);
     // }
     setIpData(fakeapi);
     setLat(fakeapi.latitude);
@@ -72,20 +71,29 @@ function App() {
   return (
     <>
       <SearchCity searchCity={searchCity} />
-
-      {apiOverload ? (
-        <p>Sorry, too many API requests at the moment</p>
-      ) : (
-        weatherData.main && (
-          <>
-            <WeatherTemperature
-              city={searchByCity ? weatherData.name : ipData.city}
-              temp={Math.round(weatherData.main.temp)}
-            />
-            <WeatherDetails />
-          </>
-        )
-      )}
+      <div className="app-box">
+        {apiOverload ? (
+          <div>
+            <p>Unfortunatly we weren't able to detect your location😔</p>
+            <p>Please enter a city name to check its weather</p>
+          </div>
+        ) : (
+          weatherData.main && (
+            <>
+              <WeatherTemperature
+                city={searchByCity ? weatherData.name : ipData.city}
+                temp={Math.round(weatherData.main.temp)}
+                condition={weatherData.weather[0].main}
+              />
+              <WeatherDetails
+                feelsLike={Math.round(weatherData.main.feels_like)}
+                humidity={weatherData.main.humidity}
+                windSpeed={Math.round(weatherData.wind.speed)}
+              />
+            </>
+          )
+        )}
+      </div>
     </>
   );
 }

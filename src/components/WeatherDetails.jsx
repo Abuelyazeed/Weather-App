@@ -1,31 +1,24 @@
-import React, { useState } from "react";
 import "./WeatherDetails.css";
-import clear_icon from "../assets/clear.png";
-import cloud_icon from "../assets/cloud.png";
-import drizzle_icon from "../assets/drizzle.png";
-import humidity_icon from "../assets/humidity.png";
-import rain_icon from "../assets/rain.png";
-import snow_icon from "../assets/snow.png";
-import wind_icon from "../assets/wind.png";
 
-function WeatherDetails() {
-  const [humidity, setHumidity] = useState("");
-  const [windSpeed, setWindSpeed] = useState("");
-
+function WeatherDetails({ feelsLike, humidity, windSpeed }) {
   return (
-    <div className="container weather-details">
-      <div className="humidity-wind">
-        <img src={humidity_icon} className="humidity-icon"></img>
+    <div className="weather-details">
+      <div className="feels-humidity-wind">
         <div className="data">
-          <p className="humidity-precentage">64%</p>
+          <p className="feels-like">{feelsLike}&deg;C</p>
+          <p className="text">Feels Like</p>
+        </div>
+      </div>
+      <div className="feels-humidity-wind">
+        <div className="data">
+          <p className="humidity-precentage">{humidity}%</p>
           <p className="text">Humidity</p>
         </div>
       </div>
-      <div className="humidity-wind">
-        <img src={wind_icon} className="wind-icon"></img>
+      <div className="feels-humidity-wind">
         <div className="data">
-          <p className="humidity-precentage">18 km/h</p>
-          <p className="text">Wind Speed</p>
+          <p className="wind-speed">{windSpeed} KMH</p>
+          <p className="text">Winds</p>
         </div>
       </div>
     </div>
