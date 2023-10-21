@@ -17,11 +17,11 @@ function App() {
 
   async function getLocation() {
     try {
-      const ipApiUrl = "http://ip-api.com/json";
+      const ipApiUrl = "https://ipapi.co/json";
       const response = await fetch(ipApiUrl);
       const data = await response.json();
       setIpData(data);
-      searchCityByCoordinates(data.lat, data.lon);
+      searchCityByCoordinates(data.latitude, data.longitude);
     } catch (error) {
       console.error("Error fetching location:", error);
     }
