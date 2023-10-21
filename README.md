@@ -1,6 +1,6 @@
 # Weather App
 
-The Weather App is a simple web application that allows you to check the current weather conditions for any location. It's built using HTML, CSS, and React.js.
+The Weather App is a mobile-first web application that allows you to check the current weather conditions for any location or your current location. It's built using HTML, CSS, and React.js.
 
 ## Features
 
@@ -9,6 +9,7 @@ The Weather App is a simple web application that allows you to check the current
 - See how it "feels like" outside.
 - Check the humidity percentage.
 - Get the current wind speed.
+- Automatically get the weather for your current location.
 
 ## Demo
 
@@ -23,13 +24,14 @@ You can try out the [live demo here](https://weather-app-737e1.web.app/).
 
 ## Usage
 
-1. Open the Weather App in your browser.
-2. Enter your location in the search field and press Enter.
-3. The app will display the current weather conditions for the specified location.
+1. Open the Weather App in your browser. It's designed to work seamlessly on mobile devices.
+2. To get the weather for your current location, simply open the app.
+3. To check the weather for a specific location, enter the location in the search field and press Enter.
+4. The app will display the current weather conditions.
 
 ## Technologies
 
-- HTML, CSS for the user interface.
+- HTML, CSS for the user interface, designed with a mobile-first approach.
 - React.js for building the interactive components.
 
 ## API
