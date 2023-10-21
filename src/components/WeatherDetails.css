@@ -19,18 +19,8 @@
   flex-direction: column;
   align-items: center;
 }
-.feels-like {
-  font-weight: 700;
-  font-size: 1.4rem;
-  margin: 0;
-}
-
-.humidity-precentage {
-  font-size: 1.4rem;
-  font-weight: 700;
-  margin: 0;
-}
-
+.feels-like,
+.humidity-precentage,
 .wind-speed {
   font-weight: 700;
   font-size: 1.4rem;
@@ -40,4 +30,14 @@
 .text {
   margin: 0;
   font-weight: 500;
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .weather-details {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 auto;
+  }
 }

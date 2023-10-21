@@ -31,3 +31,25 @@
   margin-left: 0.5rem;
   white-space: nowrap;
 }
+
+/*  Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .box {
+    display: block;
+    text-align: center;
+  }
+  .city-temp {
+    display: flex;
+    align-items: center;
+  }
+  .condition {
+    position: static;
+    transform: none;
+    transform-origin: initial;
+    right: auto;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-left: initial;
+    white-space: normal;
+  }
+}

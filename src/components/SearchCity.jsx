@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./SearchCity.css";
-import { MdSearch } from "react-icons/md";
 
 function SearchCity({ searchCity }) {
   const [enteredCity, setEnteredCity] = useState("");
