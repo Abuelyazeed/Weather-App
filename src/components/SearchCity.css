@@ -4,17 +4,13 @@
 }
 
 .search-input {
-  background-color: rgba(255, 255, 255, 0.168);
-  width: 90%;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 60%;
   border: none;
   border-radius: 1.5rem;
   padding: 1rem;
-  max-width: 100%;
+  color: white;
 }
-
-/* Media query for desktop devices */
-@media (min-width: 768px) {
-  .search-icon {
-    font-size: 1.3rem;
-  }
+::placeholder {
+  color: white;
 }
