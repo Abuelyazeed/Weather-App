@@ -12,7 +12,7 @@ The Weather App is a simple web application that allows you to check the current
 
 ## Demo
 
-You can try out the [live demo here](your-demo-link-here).
+You can try out the [live demo here](https://weather-app-737e1.web.app/).
 
 ## Installation
 
