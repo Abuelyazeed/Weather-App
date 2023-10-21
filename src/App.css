@@ -2,5 +2,14 @@
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  gap: 27rem;
+  justify-content: space-between;
+  min-height: 85vh;
+}
+.message {
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.msg-txt {
+  width: 50%;
 }
